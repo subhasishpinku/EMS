@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:id="@+id/lv8"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="10sp"
+        android:layout_marginRight="20dp"
+        android:layout_weight="1"
+        android:background="@drawable/white_border"
+        android:padding="11dp"
+        android:paddingLeft="10dp"
+        android:paddingEnd="10dp">
+
+        <Spinner
+            android:id="@+id/acSp1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:overlapAnchor="false"
+            android:textColor="@color/gray" />
+    </LinearLayout>
+
+    <com.google.android.material.textfield.TextInputEditText
+        android:id="@+id/board1"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_below="@+id/lv8"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="10sp"
+        android:layout_marginRight="20dp"
+        android:background="@drawable/white_border"
+        android:gravity="top"
+        android:hint="Board/University"
+        android:inputType="text"
+        android:paddingLeft="10dp"
+        android:textSize="15dp" />
+    <com.google.android.material.textfield.TextInputEditText
+        android:id="@+id/years1"
+        android:layout_width="150dp"
+        android:layout_height="50dp"
+        android:layout_below="@+id/board1"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="10sp"
+        android:layout_marginRight="20dp"
+        android:background="@drawable/white_border"
+        android:gravity="top"
+        android:hint="Years"
+        android:inputType="text"
+        android:paddingLeft="10dp"
+        android:textSize="15dp" />
+
+    <com.google.android.material.textfield.TextInputEditText
+        android:id="@+id/fullmarks1"
+        android:layout_toRightOf="@+id/years1"
+        android:layout_width="150dp"
+        android:layout_height="50dp"
+        android:layout_below="@+id/board1"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="10sp"
+        android:layout_marginRight="20dp"
+        android:background="@drawable/white_border"
+        android:gravity="top"
+        android:hint="Full Marks"
+        android:inputType="text"
+        android:paddingLeft="10dp"
+        android:textSize="15dp" />
+
+    <com.google.android.material.textfield.TextInputEditText
+        android:id="@+id/marksObtent1"
+        android:layout_width="150dp"
+        android:layout_height="50dp"
+        android:layout_below="@+id/years1"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="10sp"
+        android:layout_marginRight="20dp"
+        android:background="@drawable/white_border"
+        android:gravity="top"
+        android:hint="marks_obtained"
+        android:inputType="number"
+        android:paddingLeft="10dp"
+        android:textSize="15dp" />
+
+    <com.google.android.material.textfield.TextInputEditText
+        android:id="@+id/persentage1"
+        android:layout_toRightOf="@+id/marksObtent1"
+        android:layout_width="150dp"
+        android:layout_height="50dp"
+        android:layout_below="@+id/years1"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="10sp"
+        android:layout_marginRight="20dp"
+        android:background="@drawable/white_border"
+        android:gravity="top"
+        android:hint="percentage"
+        android:inputType="number"
+        android:paddingLeft="10dp"
+        android:textSize="15dp" />
+
+    <ImageView
+        android:id="@+id/minus_row"
+        android:layout_alignParentEnd="true"
+        android:layout_below="@+id/marksObtent1"
+        android:layout_width="35dp"
+        android:layout_height="35dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/choose_files"
+        android:src="@drawable/ic_baseline_minimize_24"
+        android:padding="10dp" />
+
+    <TextView
+        android:id="@+id/select_acdamy1"
+        android:layout_below="@+id/marksObtent1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_marginStart="20dp"
+        android:background="@drawable/choose_files"
+        android:padding="10dp"
+        android:text="Choose File"
+        android:textColor="@color/white"
+        android:textSize="12dp" />
+    <ImageView
+        android:id="@+id/cast_images1"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:foregroundGravity="right"
+        android:layout_marginLeft="5dp"
+        android:layout_below="@+id/marksObtent1"
+        android:layout_toRightOf="@+id/select_acdamy1"
+        android:background="@drawable/ic_baseline_photo_camera_24" />
+    <TextView
+        android:visibility="gone"
+        android:id="@+id/acadamy_image_show1"
+        android:layout_below="@+id/marksObtent1"
+        android:layout_toRightOf="@+id/select_acdamy1"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="5dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+</RelativeLayout>

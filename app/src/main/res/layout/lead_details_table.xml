@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/rvList"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginLeft="0dp"
+    android:layout_marginRight="0dp">
+    <LinearLayout
+        android:orientation="horizontal"
+        android:padding="0dip"
+        android:weightSum="5"
+        android:id="@+id/tableRow2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="2dip">
+
+        <TextView
+            android:id="@+id/bookingId"
+            android:layout_width="116dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="#f6f6f6"
+            android:gravity="center"
+            android:padding="10dp"
+            android:text="Booking"
+            android:textColor="@color/black"
+            android:textSize="8sp" />
+
+        <EditText
+            android:id="@+id/amountId"
+            android:layout_weight="1"
+            android:layout_marginLeft="3dp"
+            android:layout_width="84dp"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:padding="10dp"
+            android:textColor="@color/black"
+            android:textSize="8sp"
+            android:hint="0"
+            android:imeOptions="actionDone"
+            android:inputType="number"
+
+            android:background="#f6f6f6"/>
+        <TextView
+            android:id="@+id/dateId"
+            android:layout_weight="1"
+            android:layout_marginLeft="2dp"
+            android:layout_width="84dp"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:padding="10dp"
+            android:text="25-12-2022"
+            android:textColor="@color/black"
+            android:textSize="8sp"
+            android:background="#f6f6f6"/>
+        <LinearLayout
+            android:layout_weight="1"
+            android:layout_marginLeft="4dp"
+            android:background="#f6f6f6"
+            android:gravity="center"
+            android:layout_width="44dp"
+            android:layout_height="32dp">
+            <ImageView
+                android:id="@+id/Img"
+                android:scaleType="fitXY"
+                android:background="@drawable/calendar"
+                android:layout_width="20dp"
+                android:layout_height="20dp"/>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_weight="1"
+
+            android:layout_marginLeft="5dp"
+            android:background="#f6f6f6"
+            android:gravity="center"
+            android:layout_width="44dp"
+            android:layout_height="32dp">
+            <ImageView
+                android:id="@+id/Img1"
+                android:scaleType="fitXY"
+                android:layout_width="20dp"
+                android:layout_height="20dp"/>
+        </LinearLayout>
+    </LinearLayout>
+
+</RelativeLayout>

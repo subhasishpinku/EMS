@@ -1,0 +1,1396 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_marginTop="20dp"
+    android:layout_marginRight="20dp"
+    android:layout_marginLeft="20dp">
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <LinearLayout
+                android:id="@+id/lv"
+                android:orientation="vertical"
+                android:background="#e5ebef"
+                android:layout_width="match_parent"
+                android:layout_height="198dp">
+                <ImageView
+                    android:layout_gravity="center"
+                    android:layout_width="80dp"
+                    android:layout_height="80dp"
+                    android:background="@mipmap/form_logo"
+                    android:scaleType="fitXY" />
+                <ImageView
+                    android:layout_marginTop="10dp"
+                    android:layout_gravity="center"
+                    android:layout_width="180dp"
+                    android:layout_height="50dp"
+                    android:background="@mipmap/logo_text"
+                    android:scaleType="fitXY" />
+                <TextView
+                    android:background="@drawable/profile_text"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="14dp"
+                    android:textSize="18dp"
+                    android:padding="10dp"
+                    android:textColor="@color/white"
+                    android:text="Student Application Form"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+            </LinearLayout>
+
+            <RelativeLayout
+                android:id="@+id/rv"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/lv"
+                android:layout_alignParentEnd="true"
+                android:layout_marginTop="0dp"
+                android:layout_marginEnd="0dp"
+                android:background="#e5ebef"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:visibility="gone"
+                    android:id="@+id/lv1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentTop="true"
+                    android:layout_alignParentEnd="true"
+                    android:layout_marginTop="0dp"
+                    android:layout_marginEnd="0dp"
+                    android:gravity="center"
+                    android:orientation="horizontal">
+
+                    <LinearLayout
+                        android:id="@+id/personal_Id"
+                        android:layout_width="90dp"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/card_green"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:layout_marginTop="10dp"
+                            android:text="PERSONAL"
+                            android:textColor="@color/white"
+                            android:textSize="15dp" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:text="DETAILS"
+                            android:textColor="@color/white"
+                            android:textSize="15dp" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:layout_marginTop="10dp"
+                            android:layout_marginBottom="5dp"
+                            android:text="1"
+                            android:textColor="@color/white"
+                            android:textSize="30dp" />
+                    </LinearLayout>
+
+                    <Space
+                        android:layout_width="4dp"
+                        android:layout_height="0dp" />
+
+                    <LinearLayout
+                        android:id="@+id/acadamy_Id"
+                        android:layout_width="90dp"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/card_acadamy"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:layout_marginTop="10dp"
+                            android:text="ACADEMIC"
+                            android:textColor="@color/grays"
+                            android:textSize="15dp" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:text="DETAILS"
+                            android:textColor="@color/grays"
+                            android:textSize="15dp" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:layout_marginTop="10dp"
+                            android:layout_marginBottom="5dp"
+                            android:text="2"
+                            android:textColor="@color/grays"
+                            android:textSize="30dp" />
+
+                    </LinearLayout>
+                </LinearLayout>
+
+                <TextView
+                    android:id="@+id/name"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/lv1"
+                    android:gravity="center"
+                    android:text="Sudip Saha"
+                    android:textColor="@color/black"
+                    android:textSize="35dp" />
+
+                <LinearLayout
+                    android:id="@+id/lv_phone"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/name"
+                    android:layout_marginTop="1dp"
+                    android:gravity="center"
+                    android:orientation="horizontal"
+                    android:weightSum="2">
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:weightSum="2">
+
+                        <TextView
+                            android:id="@+id/led_tv1"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:padding="5dp"
+                            android:text="M :"
+                            android:textColor="#009ee3"
+                            android:textSize="15sp"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:id="@+id/mobile_tv1"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:padding="5dp"
+                            android:text="+91 9836526475"
+                            android:textColor="@color/black"
+                            android:textSize="15sp"
+                            android:textStyle="normal" />
+
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="1dp"
+                        android:orientation="horizontal"
+                        android:weightSum="2">
+
+                        <TextView
+                            android:id="@+id/led_tv11"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:padding="5dp"
+                            android:text="W :"
+                            android:textColor="#73981b"
+                            android:textSize="15sp"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:id="@+id/mobile_tv2"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:padding="5dp"
+                            android:text="+91 9836526475"
+                            android:textColor="@color/black"
+                            android:textSize="15sp"
+                            android:textStyle="normal" />
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/email_lv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/lv_phone"
+                    android:layout_marginLeft="80dp"
+                    android:orientation="horizontal"
+                    android:weightSum="2">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:padding="5dp"
+                        android:text="E :"
+                        android:textColor="#f07c00"
+                        android:textSize="15sp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/email_Id"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:padding="5dp"
+                        android:text="pritam@pmitcolleges.org"
+                        android:textColor="@color/black"
+                        android:textSize="15sp"
+                        android:textStyle="normal" />
+
+                </LinearLayout>
+
+                <ImageView
+                    android:id="@+id/dot"
+                    android:layout_width="match_parent"
+                    android:layout_height="5dp"
+                    android:layout_below="@+id/email_lv"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginRight="10dp"
+                    android:layerType="software"
+                    android:src="@drawable/dotted" />
+
+                <RelativeLayout
+                    android:id="@+id/rv1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/dot"
+                    android:layout_marginTop="20sp"
+                    android:gravity="center">
+
+                    <LinearLayout
+                        android:id="@+id/lv_home"
+                        android:layout_width="40dp"
+                        android:layout_height="36dp"
+                        android:background="@drawable/profile_homes"
+                        android:gravity="center"
+                        android:orientation="vertical">
+
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:background="@drawable/ic_baseline_home_work_24" />
+                    </LinearLayout>
+
+                    <TextView
+                        android:id="@+id/led_tv3"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_toRightOf="@+id/lv_home"
+                        android:background="@drawable/profile_home"
+                        android:padding="8dp"
+                        android:text="PMIT COLLEGE OF PHARMACY"
+                        android:textColor="@color/black" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/rv2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/rv1"
+                    android:layout_marginTop="5sp"
+                    android:gravity="center">
+
+                    <LinearLayout
+                        android:id="@+id/lv_home1"
+                        android:layout_width="40dp"
+                        android:layout_height="36dp"
+                        android:background="@drawable/profile_homes"
+                        android:gravity="center"
+                        android:orientation="vertical">
+
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:background="@drawable/ic_baseline_menu_book_24" />
+                    </LinearLayout>
+
+                    <TextView
+                        android:id="@+id/led_tv4"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_toRightOf="@+id/lv_home1"
+                        android:background="@drawable/profile_dpharma"
+                        android:padding="8dp"
+                        android:text="D. PHARMA"
+                        android:textColor="@color/white" />
+                </RelativeLayout>
+
+                <FrameLayout
+                    android:id="@+id/fram"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/rv2"
+                    android:layout_marginLeft="80dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginRight="80dp"
+                    tools:ignore="MissingConstraints">
+
+                    <LinearLayout
+                        android:id="@+id/lv2"
+                        android:layout_width="match_parent"
+                        android:layout_height="180dp"
+                        android:background="@drawable/white_profile"
+                        android:orientation="vertical">
+
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_marginLeft="10dp"
+                            android:layout_marginTop="10dp"
+                            android:layout_marginRight="10dp"
+                            android:layout_marginBottom="10dp"
+                            android:background="@drawable/white_profiles"
+                            android:gravity="center"
+                            android:orientation="vertical">
+
+                            <ImageView
+                                android:id="@+id/camera"
+                                android:layout_width="80dp"
+                                android:layout_height="80dp"
+                                android:layout_marginLeft="5dp"
+                                android:background="@drawable/ic_baseline_photo_camera_24" />
+
+                            <ImageView
+                                android:id="@+id/roundedImageView"
+                                android:layout_width="80dp"
+                                android:layout_height="80dp"
+                                android:layout_marginLeft="5dp"
+                                android:scaleType="centerCrop"
+                                android:visibility="gone" />
+
+                            <TextView
+                                android:id="@+id/c_tv"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_below="@+id/camera"
+                                android:layout_marginTop="5dp"
+                                android:text="Upload Photo"
+                                android:textColor="@color/black"
+                                android:textSize="15dp" />
+
+                            <TextView
+                                android:id="@+id/c_tv1"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_below="@+id/roundedImageView"
+                                android:layout_marginTop="5dp"
+                                android:text="Upload Photos"
+                                android:textColor="@color/black"
+                                android:textSize="15dp"
+                                android:visibility="gone" />
+                        </RelativeLayout>
+                    </LinearLayout>
+                </FrameLayout>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/rv2"
+                    android:layout_marginLeft="140dp"
+                    android:layout_marginTop="160dp"
+                    android:background="@drawable/upload_bg"
+                    android:drawableLeft="@drawable/ic_baseline_upload_24"
+                    android:paddingLeft="10dp"
+                    android:paddingTop="5dp"
+                    android:paddingRight="15dp"
+                    android:paddingBottom="5dp"
+                    android:text="Upload"
+                    android:textColor="@color/white"
+                    android:textSize="15dp" />
+
+                <LinearLayout
+                    android:id="@+id/lv3"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/fram"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginRight="20dp"
+                    android:background="@drawable/upload_bg"
+                    android:orientation="horizontal"
+                    android:padding="12dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:drawableRight="@drawable/ic_baseline_star_24"
+                        android:text="Please Fill up the data carefully &amp; all the "
+                        android:textColor="@color/white"
+                        android:textSize="10dp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="is mandatory field."
+                        android:textColor="@color/white"
+                        android:textSize="10dp" />
+                </LinearLayout>
+                <TextView
+                    android:id="@+id/sessionId"
+                    android:layout_marginTop="10sp"
+                    android:layout_below="@+id/lv3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Session* : 2023-24"
+                    android:layout_marginLeft="20dp"
+                    android:textColor="@color/black"
+                    android:textSize="15dp" />
+                <LinearLayout
+                    android:id="@+id/select_Id"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/sessionId"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginTop="10sp"
+                    android:layout_marginRight="20dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/white_border"
+                    android:padding="11dp"
+                    android:paddingLeft="10dp"
+                    android:paddingEnd="10dp">
+
+                    <Spinner
+                        android:id="@+id/spinner"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/led_tv"
+                        android:overlapAnchor="false"
+                        android:textColor="@color/gray" />
+                </LinearLayout>
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/fatherId"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:layout_below="@+id/select_Id"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginTop="10sp"
+                    android:layout_marginRight="20dp"
+                    android:background="@drawable/white_border"
+                    android:gravity="top"
+                    android:hint="Father’s Name"
+                    android:inputType="text"
+                    android:paddingLeft="10dp"
+                    android:textSize="15dp" />
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/mothersId"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:layout_below="@+id/fatherId"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginTop="10sp"
+                    android:layout_marginRight="20dp"
+                    android:background="@drawable/white_border"
+                    android:gravity="top"
+                    android:hint="Mother’s Name"
+                    android:inputType="text"
+                    android:paddingLeft="10dp"
+                    android:textSize="15dp" />
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/guardianId"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:layout_below="@+id/mothersId"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginTop="10sp"
+                    android:layout_marginRight="20dp"
+                    android:background="@drawable/white_border"
+                    android:gravity="top"
+                    android:hint="Guardian’s Name"
+                    android:inputType="text"
+                    android:paddingLeft="10dp"
+                    android:textSize="15dp" />
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/fIncmome"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:layout_below="@+id/guardianId"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginTop="10sp"
+                    android:layout_marginRight="20dp"
+                    android:background="@drawable/white_border"
+                    android:gravity="top"
+                    android:hint="Annual Family Income"
+                    android:inputType="number"
+                    android:paddingLeft="10dp"
+                    android:textSize="15dp" />
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/PAddress_Id"
+                    android:layout_width="match_parent"
+                    android:layout_height="100dp"
+                    android:layout_below="@+id/fIncmome"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginTop="10sp"
+                    android:layout_marginRight="20dp"
+                    android:background="@drawable/white_border"
+                    android:gravity="top"
+                    android:hint="Permanent Address"
+                    android:inputType="textMultiLine"
+                    android:paddingLeft="10dp"
+                    android:textSize="15dp" />
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/stateId"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:layout_below="@+id/PAddress_Id"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginTop="10sp"
+                    android:layout_marginRight="20dp"
+                    android:background="@drawable/white_border"
+                    android:gravity="top"
+                    android:hint="State"
+                    android:inputType="text"
+                    android:paddingLeft="10dp"
+                    android:textSize="15dp" />
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/DistrictId"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:layout_below="@+id/stateId"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginTop="10sp"
+                    android:layout_marginRight="20dp"
+                    android:background="@drawable/white_border"
+                    android:gravity="top"
+                    android:hint="District"
+                    android:inputType="text"
+                    android:paddingLeft="10dp"
+                    android:textSize="15dp" />
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/cityId"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:layout_below="@+id/DistrictId"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginTop="10sp"
+                    android:layout_marginRight="20dp"
+                    android:background="@drawable/white_border"
+                    android:gravity="top"
+                    android:hint="City"
+                    android:inputType="text"
+                    android:paddingLeft="10dp"
+                    android:textSize="15dp" />
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/pinId"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:layout_below="@+id/cityId"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginTop="10sp"
+                    android:layout_marginRight="20dp"
+                    android:background="@drawable/white_border"
+                    android:gravity="top"
+                    android:hint="Pin"
+                    android:inputType="number"
+                    android:paddingLeft="10dp"
+                    android:textSize="15dp" />
+                <CheckBox
+                    android:id="@+id/addressCheck"
+                    android:layout_below="@+id/pinId"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginTop="10dp"
+                    android:onClick="onCheckboxClicked"
+                    android:textSize="12dp"
+                    android:text="Parmanent address is the same as my Present address"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/PAddress_Id1"
+                    android:layout_width="match_parent"
+                    android:layout_height="100dp"
+                    android:layout_below="@+id/addressCheck"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginTop="10sp"
+                    android:layout_marginRight="20dp"
+                    android:background="@drawable/white_border"
+                    android:gravity="top"
+                    android:hint="Permanent Address"
+                    android:inputType="textMultiLine"
+                    android:paddingLeft="10dp"
+                    android:textSize="15dp" />
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/stateId1"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:layout_below="@+id/PAddress_Id1"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginTop="10sp"
+                    android:layout_marginRight="20dp"
+                    android:background="@drawable/white_border"
+                    android:gravity="top"
+                    android:hint="Present  State"
+                    android:inputType="text"
+                    android:paddingLeft="10dp"
+                    android:textSize="15dp" />
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/DistrictId1"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:layout_below="@+id/stateId1"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginTop="10sp"
+                    android:layout_marginRight="20dp"
+                    android:background="@drawable/white_border"
+                    android:gravity="top"
+                    android:hint="Present  District"
+                    android:inputType="text"
+                    android:paddingLeft="10dp"
+                    android:textSize="15dp" />
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/cityId1"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:layout_below="@+id/DistrictId1"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginTop="10sp"
+                    android:layout_marginRight="20dp"
+                    android:background="@drawable/white_border"
+                    android:gravity="top"
+                    android:hint="Present  City"
+                    android:inputType="text"
+                    android:paddingLeft="10dp"
+                    android:textSize="15dp" />
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/pinId1"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:layout_below="@+id/cityId1"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginTop="10sp"
+                    android:layout_marginRight="20dp"
+                    android:background="@drawable/white_border"
+                    android:gravity="top"
+                    android:hint="Present Pin"
+                    android:inputType="number"
+                    android:paddingLeft="10dp"
+                    android:textSize="15dp" />
+                <RelativeLayout
+                    android:id="@+id/rv3"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/pinId1"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginRight="20dp"
+                    android:background="@drawable/catagory_bg"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:id="@+id/catagoryId"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="20dp"
+                        android:layout_marginTop="20sp"
+                        android:layout_marginRight="20dp"
+                        android:layout_weight="1"
+                        android:background="@drawable/white_border"
+                        android:padding="11dp"
+                        android:paddingLeft="10dp"
+                        android:paddingEnd="10dp">
+
+                        <Spinner
+                            android:id="@+id/spinner_cat"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@+id/led_tv"
+                            android:overlapAnchor="false"
+                            android:textColor="@color/gray" />
+                    </LinearLayout>
+                    <TextView
+                        android:id="@+id/select_cast_certificate"
+                        android:layout_below="@+id/catagoryId"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginStart="20dp"
+                        android:background="@drawable/choose_files"
+                        android:padding="10dp"
+                        android:text="Choose cast certificate"
+                        android:textColor="@color/white"
+                        android:textSize="12dp" />
+                    <TextView
+                        android:id="@+id/cast_image_show"
+                        android:layout_below="@+id/catagoryId"
+                        android:layout_toRightOf="@+id/select_cast_certificate"
+                        android:layout_marginTop="20dp"
+                        android:layout_marginLeft="5dp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"/>
+                    <TextView
+                        android:id="@+id/tv_id"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/select_cast_certificate"
+                        android:layout_marginLeft="20dp"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginRight="20dp"
+                        android:text="Level :"
+                        android:textColor="@color/black"
+                        android:textSize="15dp"
+                        android:textStyle="bold" />
+
+                    <RadioGroup
+                        android:id="@+id/radioG"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/tv_id">
+
+                        <RadioButton
+                            android:id="@+id/johnCena"
+                            android:layout_width="wrap_content"
+                            android:layout_height="30dp"
+                            android:layout_marginLeft="20dp"
+                            android:layout_marginTop="2dp"
+                            android:layout_marginRight="20dp"
+                            android:checked="false"
+                            android:text="Class 12"
+                            android:textColor="@color/black"
+                            android:textSize="15dp"
+                            android:textStyle="normal" />
+
+                        <RadioButton
+                            android:id="@+id/randyOrton"
+                            android:layout_width="wrap_content"
+                            android:layout_height="30dp"
+                            android:layout_marginLeft="20dp"
+                            android:layout_marginTop="5dp"
+                            android:layout_marginRight="20dp"
+                            android:checked="false"
+                            android:text="UG / PG"
+                            android:textColor="@color/black"
+                            android:textSize="15dp"
+                            android:textStyle="normal" />
+
+
+                    </RadioGroup>
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/lastschoolId"
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:layout_below="@+id/radioG"
+                        android:layout_marginLeft="20dp"
+                        android:layout_marginTop="10sp"
+                        android:layout_marginRight="20dp"
+                        android:background="@drawable/white_border"
+                        android:gravity="top"
+                        android:hint="Last School Name"
+                        android:inputType="text"
+                        android:paddingLeft="10dp"
+                        android:textSize="15dp" />
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/lastRgNo"
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:layout_below="@+id/lastschoolId"
+                        android:layout_marginLeft="20dp"
+                        android:layout_marginTop="10sp"
+                        android:layout_marginRight="20dp"
+                        android:background="@drawable/white_border"
+                        android:gravity="top"
+                        android:hint="Last School Regn. No."
+                        android:inputType="text"
+                        android:paddingLeft="10dp"
+                        android:textSize="15dp" />
+
+                    <TextView
+                        android:id="@+id/appliaction_id"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/lastRgNo"
+                        android:layout_marginLeft="20dp"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginRight="20dp"
+                        android:text="Application Type :"
+                        android:textColor="@color/black"
+                        android:textSize="15dp"
+                        android:textStyle="bold" />
+
+                    <RadioGroup
+                        android:id="@+id/radioG1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/appliaction_id">
+
+                        <RadioButton
+                            android:id="@+id/fresherId"
+                            android:layout_width="wrap_content"
+                            android:layout_height="30dp"
+                            android:layout_marginLeft="20dp"
+                            android:layout_marginTop="2dp"
+                            android:layout_marginRight="20dp"
+                            android:checked="false"
+                            android:text="Freshers"
+                            android:textColor="@color/black"
+                            android:textSize="15dp"
+                            android:textStyle="normal" />
+
+                        <RadioButton
+                            android:id="@+id/deputedId"
+                            android:layout_width="wrap_content"
+                            android:layout_height="30dp"
+                            android:layout_marginLeft="20dp"
+                            android:layout_marginTop="5dp"
+                            android:layout_marginRight="20dp"
+                            android:checked="false"
+                            android:text="Deputed"
+                            android:textColor="@color/black"
+                            android:textSize="15dp"
+                            android:textStyle="normal" />
+
+
+                    </RadioGroup>
+
+                    <TextView
+                        android:id="@+id/IsPWD_id"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/radioG1"
+                        android:layout_marginLeft="20dp"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginRight="20dp"
+                        android:padding="5dp"
+                        android:text="Is PWD ?"
+                        android:textColor="@color/black"
+                        android:textSize="15dp"
+                        android:textStyle="normal" />
+
+                    <CheckBox
+                        android:id="@+id/checkBox"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/radioG1"
+                        android:layout_marginTop="0dp"
+                        android:layout_toRightOf="@+id/IsPWD_id"
+                        android:checked="false"
+                        android:onClick="onCheckboxClicked"
+                        android:theme="@style/WhiteCheck" />
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/persentaID"
+                        android:layout_width="wrap_content"
+                        android:layout_height="40dp"
+                        android:layout_below="@+id/radioG1"
+                        android:layout_alignParentEnd="true"
+                        android:layout_marginLeft="60dp"
+                        android:layout_marginTop="5dp"
+                        android:layout_marginRight="20dp"
+                        android:layout_toRightOf="@+id/IsPWD_id"
+                        android:background="@drawable/white_border"
+                        android:gravity="center"
+                        android:hint="%"
+                        android:inputType="text"
+                        android:paddingLeft="10dp"
+                        android:textSize="15dp" />
+
+                    <LinearLayout
+                        android:id="@+id/blood_Id"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/persentaID"
+                        android:layout_marginLeft="20dp"
+                        android:layout_marginTop="10sp"
+                        android:layout_marginRight="20dp"
+                        android:layout_marginBottom="20dp"
+                        android:layout_weight="1"
+                        android:background="@drawable/white_border"
+                        android:padding="11dp"
+                        android:paddingLeft="10dp"
+                        android:paddingEnd="10dp">
+
+                        <Spinner
+                            android:id="@+id/spinner3"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@+id/led_tv"
+                            android:overlapAnchor="false"
+                            android:textColor="@color/gray" />
+                    </LinearLayout>
+
+                </RelativeLayout>
+
+                <LinearLayout
+                    android:id="@+id/lv4"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/rv3"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginRight="20dp"
+                    android:orientation="horizontal"
+                    android:weightSum="2">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginEnd="0dp"
+                        android:layout_weight="0"
+                        android:background="@drawable/card_right"
+                        android:gravity="center"
+                        android:padding="17dp"
+                        android:text="Aadhar No."
+                        android:textColor="@color/white"
+                        android:textSize="12dp" />
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/userName"
+                        android:layout_width="wrap_content"
+                        android:layout_height="50dp"
+                        android:layout_below="@+id/led_tv"
+                        android:layout_marginRight="0dp"
+                        android:layout_weight="1.9"
+                        android:background="@drawable/white_border1"
+                        android:hint="Aadhar No."
+                        android:inputType="text"
+                        android:paddingLeft="10dp"
+                        android:paddingEnd="10dp" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/lv5"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/lv4"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginRight="20dp"
+                    android:orientation="horizontal"
+                    android:weightSum="2">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginEnd="0dp"
+                        android:layout_weight="0"
+                        android:background="@drawable/card_right"
+                        android:gravity="center"
+                        android:padding="17dp"
+                        android:text="Nationality"
+                        android:textColor="@color/white"
+                        android:textSize="12dp" />
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/nationalityID"
+                        android:layout_width="wrap_content"
+                        android:layout_height="50dp"
+                        android:layout_below="@+id/led_tv"
+                        android:layout_marginRight="0dp"
+                        android:layout_weight="1.9"
+                        android:background="@drawable/white_border1"
+                        android:hint="Enter Nationality"
+                        android:inputType="text"
+                        android:paddingLeft="10dp"
+                        android:paddingEnd="10dp" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/lv6"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/lv5"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginTop="10sp"
+                    android:layout_marginRight="20dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/white_border"
+                    android:padding="11dp"
+                    android:paddingLeft="10dp"
+                    android:paddingEnd="10dp">
+
+                    <Spinner
+                        android:id="@+id/spinner4"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/led_tv"
+                        android:overlapAnchor="false"
+                        android:textColor="@color/gray" />
+                </LinearLayout>
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/dbId"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:layout_below="@+id/lv6"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginTop="10sp"
+                    android:layout_marginRight="20dp"
+                    android:background="@drawable/white_border"
+                    android:drawableEnd="@drawable/ic_baseline_calendar_month_24"
+                    android:enabled="true"
+                    android:gravity="top"
+                    android:hint="Date Of Birth"
+                    android:inputType="text"
+                    android:paddingLeft="10dp"
+                    android:paddingEnd="10dp"
+                    android:textSize="15dp" />
+
+
+                <LinearLayout
+                    android:id="@+id/mstatus"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/dbId"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginTop="10sp"
+                    android:layout_marginRight="20dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/white_border"
+                    android:padding="11dp"
+                    android:paddingLeft="10dp"
+                    android:paddingEnd="10dp">
+                    <Spinner
+                        android:id="@+id/spinner5"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/led_tv"
+                        android:overlapAnchor="false"
+                        android:textColor="@color/gray" />
+                </LinearLayout>
+                <RelativeLayout
+                    android:id="@+id/lv7"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/mstatus"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginTop="15dp"
+                    android:layout_marginRight="20dp">
+                    <TextView
+                        android:layout_marginTop="10sp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Marriage Certificate"
+                        android:layout_marginLeft="20dp"
+                        android:textColor="@color/black"
+                        android:textSize="15dp" />
+                    <ImageView
+                        android:id="@+id/choosDoc"
+                        android:layout_marginTop="20sp"
+                        android:layout_width="150dp"
+                        android:layout_height="150dp"
+                        android:layout_marginRight="0dp"
+                        android:layout_weight="0"
+                        android:background="@drawable/ic_baseline_insert_photo_24" />
+
+                    <ImageView
+                        android:id="@+id/roundedImageView1"
+                        android:layout_width="150dp"
+                        android:layout_height="150dp"
+                        android:layout_marginTop="1.9dp"
+                        android:layout_marginRight="0dp"
+                        android:layout_weight="0"
+                        android:scaleType="centerCrop"
+                        android:visibility="gone" />
+
+                    <TextView
+                        android:id="@+id/select_file"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignBaseline="@+id/choosDoc"
+                        android:layout_alignParentEnd="true"
+                        android:layout_gravity="center"
+                        android:layout_marginTop="55dp"
+                        android:layout_marginEnd="0dp"
+                        android:layout_weight="0"
+                        android:background="@drawable/choose_files"
+                        android:gravity="center"
+                        android:padding="10dp"
+                        android:text="Choose File"
+                        android:textColor="@color/white"
+                        android:textSize="12dp" />
+                </RelativeLayout>
+                <RelativeLayout
+                    android:id="@+id/lv71"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/lv7"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginTop="15dp"
+                    android:layout_marginRight="20dp">
+                    <TextView
+                        android:layout_marginTop="10sp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Signature"
+                        android:layout_marginLeft="20dp"
+                        android:textColor="@color/black"
+                        android:textSize="15dp" />
+                    <ImageView
+                        android:id="@+id/choosDoc1"
+                        android:layout_marginTop="20sp"
+                        android:layout_width="150dp"
+                        android:layout_height="150dp"
+                        android:layout_marginRight="0dp"
+                        android:layout_weight="0"
+                        android:background="@drawable/ic_baseline_insert_photo_24" />
+
+                    <ImageView
+                        android:id="@+id/roundedImageView11"
+                        android:layout_width="150dp"
+                        android:layout_height="150dp"
+                        android:layout_marginTop="1.9dp"
+                        android:layout_marginRight="0dp"
+                        android:layout_weight="0"
+                        android:scaleType="centerCrop"
+                        android:visibility="gone" />
+
+                    <TextView
+                        android:id="@+id/select_file1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignBaseline="@+id/choosDoc1"
+                        android:layout_alignParentEnd="true"
+                        android:layout_gravity="center"
+                        android:layout_marginTop="55dp"
+                        android:layout_marginEnd="0dp"
+                        android:layout_weight="0"
+                        android:background="@drawable/choose_files"
+                        android:gravity="center"
+                        android:padding="10dp"
+                        android:text="Choose File"
+                        android:textColor="@color/white"
+                        android:textSize="12dp" />
+                </RelativeLayout>
+
+                <TextView
+                    android:id="@+id/acdamy_id"
+                    android:layout_below="@+id/lv71"
+                    android:layout_marginTop="10sp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Academic Details"
+                    android:layout_marginLeft="20dp"
+                    android:textColor="#2c94cf"
+                    android:textStyle="bold"
+                    android:textSize="20dp" />
+                <TextView
+                    android:id="@+id/select_acdamy"
+                    android:layout_below="@+id/acdamy_id"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginStart="20dp"
+                    android:background="@drawable/choose_files"
+                    android:padding="10dp"
+                    android:text="Choose Madhyamik Admit"
+                    android:textColor="@color/white"
+                    android:textSize="12dp" />
+                <TextView
+                    android:id="@+id/acadamy_image_show"
+                    android:layout_below="@+id/acdamy_id"
+                    android:layout_toRightOf="@+id/select_acdamy"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginLeft="5dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+                <LinearLayout
+                    android:id="@+id/lv8"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/select_acdamy"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginTop="10sp"
+                    android:layout_marginRight="20dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/white_border"
+                    android:padding="11dp"
+                    android:paddingLeft="10dp"
+                    android:paddingEnd="10dp">
+
+                    <Spinner
+                        android:id="@+id/acSp"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:overlapAnchor="false"
+                        android:textColor="@color/gray" />
+                </LinearLayout>
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/board"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:layout_below="@+id/lv8"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginTop="10sp"
+                    android:layout_marginRight="20dp"
+                    android:background="@drawable/white_border"
+                    android:gravity="top"
+                    android:hint="Board/University"
+                    android:inputType="text"
+                    android:paddingLeft="10dp"
+                    android:textSize="15dp" />
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/years"
+                    android:layout_width="150dp"
+                    android:layout_height="50dp"
+                    android:layout_below="@+id/board"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginTop="10sp"
+                    android:layout_marginRight="20dp"
+                    android:background="@drawable/white_border"
+                    android:gravity="top"
+                    android:hint="Years"
+                    android:inputType="text"
+                    android:paddingLeft="10dp"
+                    android:textSize="15dp" />
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/fullmarks"
+                    android:layout_toRightOf="@+id/years"
+                    android:layout_width="150dp"
+                    android:layout_height="50dp"
+                    android:layout_below="@+id/board"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="10sp"
+                    android:layout_marginRight="20dp"
+                    android:background="@drawable/white_border"
+                    android:gravity="top"
+                    android:hint="Full Marks"
+                    android:inputType="text"
+                    android:paddingLeft="10dp"
+                    android:textSize="15dp" />
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/marksObtent"
+                    android:layout_width="150dp"
+                    android:layout_height="50dp"
+                    android:layout_below="@+id/years"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginTop="10sp"
+                    android:layout_marginRight="20dp"
+                    android:background="@drawable/white_border"
+                    android:gravity="top"
+                    android:hint="marks_obtained"
+                    android:inputType="number"
+                    android:paddingLeft="10dp"
+                    android:textSize="15dp" />
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/persentage"
+                    android:layout_toRightOf="@+id/marksObtent"
+                    android:layout_width="150dp"
+                    android:layout_height="50dp"
+                    android:layout_below="@+id/years"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="10sp"
+                    android:layout_marginRight="20dp"
+                    android:background="@drawable/white_border"
+                    android:gravity="top"
+                    android:hint="percentage"
+                    android:inputType="number"
+                    android:paddingLeft="10dp"
+                    android:textSize="15dp" />
+                <TextView
+                    android:id="@+id/acdamy1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/marksObtent"
+                    android:layout_marginStart="20dp"
+                    android:layout_marginTop="8dp"
+                    android:background="@drawable/choose_files"
+                    android:padding="10dp"
+                    android:text="Choose Certificate"
+                    android:textColor="@color/white"
+                    android:textSize="12dp" />
+                <TextView
+                    android:id="@+id/image_show1"
+                    android:layout_below="@+id/marksObtent"
+                    android:layout_toRightOf="@+id/select_acdamy"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginLeft="5dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+
+                <ImageView
+                    android:id="@+id/add_row"
+                    android:layout_alignParentEnd="true"
+                    android:layout_below="@+id/marksObtent"
+                    android:layout_width="35dp"
+                    android:layout_height="35dp"
+                    android:layout_marginRight="20dp"
+                    android:layout_marginTop="10dp"
+                    android:background="@drawable/choose_files"
+                    android:src="@drawable/ic_baseline_add_24"
+                    android:padding="10dp" />
+
+                <LinearLayout
+                    android:layout_marginTop="20dp"
+                    android:layout_below="@+id/add_row"
+                    android:layout_width="wrap_content"
+                    android:id="@+id/info"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+                    <androidx.recyclerview.widget.RecyclerView
+                        android:layout_marginTop="1dp"
+                        android:layout_marginLeft="20dp"
+                        android:layout_marginRight="20dp"
+                        android:id="@+id/recyclerLead1"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"/>
+                </LinearLayout>
+                <pl.droidsonroids.gif.GifImageView
+                    android:id="@+id/loaderId"
+                    android:layout_marginBottom="20dp"
+                    android:layout_below="@+id/info"
+                    android:visibility="gone"
+                    android:layout_marginLeft="150dp"
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:background="#fff"
+                    android:src="@mipmap/loaderp" />
+                <com.google.android.material.button.MaterialButton
+                    android:id="@+id/back"
+                    android:layout_width="150dp"
+                    android:layout_height="60dp"
+                    android:layout_below="@+id/loaderId"
+                    android:layout_alignParentStart="true"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginTop="35dp"
+                    android:layout_marginBottom="20dp"
+                    android:drawableRight="@drawable/ic_baseline_arrow_circle_right_24"
+                    android:foreground="?attr/selectableItemBackgroundBorderless"
+                    android:gravity="center"
+                    android:text="Save"
+                    android:textColor="@color/white"
+                    android:textSize="12sp"
+                    app:backgroundTint="#009ee3"
+                    app:cornerRadius="10dp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent" />
+            </RelativeLayout>
+        </RelativeLayout>
+
+    </ScrollView>
+</RelativeLayout>

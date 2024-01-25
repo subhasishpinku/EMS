@@ -1,0 +1,734 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:fab="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/screenTouch"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <FrameLayout
+            android:id="@+id/fram"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            tools:ignore="MissingConstraints">
+            <ImageView
+                android:id="@+id/header_cover_image"
+                android:layout_width="match_parent"
+                android:layout_height="100dp"
+                android:scaleType="centerCrop"
+                android:src="@mipmap/titale_bar" />
+        </FrameLayout>
+        <ImageView
+            android:layout_marginRight="20dp"
+            android:id="@+id/Img_Id"
+            android:layout_width="45dp"
+            android:layout_height="45dp"
+            android:layout_alignParentEnd="true"
+            android:layout_marginTop="20dp"
+            android:background="@mipmap/logo_bar"/>
+        <TextView
+            android:layout_marginLeft="20dp"
+            android:id="@+id/led_tv"
+            android:layout_marginTop="35dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Lead Details"
+            android:textColor="@color/white"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+        <com.google.android.material.textfield.TextInputEditText
+            android:layout_marginLeft="20dp"
+            android:visibility="gone"
+            android:id="@+id/search_Id"
+            android:layout_marginTop="10sp"
+            android:layout_below="@+id/led_tv"
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:background="@drawable/edit_textbg1"
+            android:drawableStart="@drawable/ic_baseline_search_24"
+            android:inputType="text"
+            android:maxLength="10"
+            android:layout_marginRight="75dp"
+            android:paddingLeft="10dp"
+            android:paddingEnd="10dp" />
+        <ImageView
+            android:visibility="gone"
+            android:layout_marginRight="20dp"
+            android:id="@+id/ImgZip"
+            android:layout_marginLeft="5dp"
+            android:layout_below="@+id/led_tv"
+            android:layout_marginTop="10sp"
+            android:layout_alignParentEnd="true"
+            android:padding="10dp"
+            android:layout_width="45dp"
+            android:layout_height="45dp"
+            android:src="@mipmap/zips"
+            android:background="@drawable/zip_code" />
+        <LinearLayout
+            android:layout_marginRight="20dp"
+            android:layout_marginTop="20sp"
+            android:layout_alignParentEnd="true"
+            android:weightSum="2"
+            android:background="@drawable/spinner_bgs"
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:layout_below="@+id/ImgZip"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+            <!--            <ImageView-->
+            <!--                android:layout_weight="1"-->
+            <!--                android:layout_width="30dp"-->
+            <!--                android:layout_height="30dp"-->
+            <!--                android:layout_toRightOf="@+id/rv"-->
+            <!--                android:background="@mipmap/preview"-->
+            <!--                android:scaleType="fitXY" />-->
+            <!--            <View-->
+            <!--                android:id="@+id/view"-->
+            <!--                android:layout_weight="1"-->
+            <!--                android:layout_marginTop="2dp"-->
+            <!--                android:layout_marginLeft="8dp"-->
+            <!--                android:layout_width="1dp"-->
+            <!--                android:layout_height="18dp"-->
+            <!--                android:background="@color/white"-->
+            <!--                />-->
+            <!--            <ImageView-->
+            <!--                android:layout_weight="1"-->
+            <!--                android:layout_marginLeft="8dp"-->
+            <!--                android:layout_width="30dp"-->
+            <!--                android:layout_height="30dp"-->
+            <!--                android:layout_toRightOf="@+id/rv"-->
+            <!--                android:background="@mipmap/next"-->
+            <!--                android:scaleType="fitXY" />-->
+
+        </LinearLayout>
+        <ScrollView
+            android:scrollbars="none"
+            android:layout_below="@+id/fram"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            tools:layout_editor_absoluteX="0dp"
+            tools:layout_editor_absoluteY="-127dp">
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <TextView
+                    android:layout_marginTop="20dp"
+                    android:id="@+id/led_name"
+                    android:gravity="center"
+                    android:textSize="30dp"
+                    android:background="@drawable/latter_coros"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:textColor="@color/white"
+                    android:text="A"/>
+                <TextView
+                    android:id="@+id/led_name1"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_toRightOf="@+id/led_name"
+                    android:text="Akash Mondal"
+                    android:textStyle="normal"
+                    android:textSize="20dp"
+                    android:textColor="#3acaff"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+                <TextView
+                    android:id="@+id/led_name2"
+                    android:layout_marginLeft="10dp"
+                    android:layout_below="@+id/led_name1"
+                    android:layout_toRightOf="@+id/led_name"
+                    android:text="01-01-1970 05:30:00 AM"
+                    android:textStyle="normal"
+                    android:textSize="15dp"
+                    android:textColor="@color/black"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+                <ImageView
+                    android:layout_alignParentEnd="true"
+                    android:id="@+id/edit_ID"
+                    android:background="@mipmap/edit"
+                    android:layout_marginTop="30dp"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"/>
+                <LinearLayout
+                    android:id="@+id/border"
+                    android:gravity="center"
+                    android:layout_marginTop="10dp"
+                    android:background="@drawable/border_wating"
+                    android:layout_below="@+id/led_name2"
+                    android:paddingRight="16dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+                    <TextView
+                        android:id="@+id/srn"
+                        android:layout_gravity="center"
+                        android:drawableLeft="@mipmap/dot_view"
+                        android:textStyle="normal"
+                        android:gravity="left"
+                        android:textSize="11sp"
+                        android:textColor="@color/black"
+                        android:layout_marginLeft="0dp"
+                        android:padding="12dp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="APPLICATION FORM"/>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/lv_phone"
+                    android:weightSum="2"
+                    android:orientation="horizontal"
+                    android:layout_marginTop="10dp"
+                    android:layout_below="@+id/border"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                    <LinearLayout
+                        android:weightSum="2"
+                        android:orientation="horizontal"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content">
+                        <TextView
+                            android:layout_weight="1"
+                            android:id="@+id/led_tv1"
+                            android:text="M"
+                            android:padding="5dp"
+                            android:textColor="#1359ca"
+                            android:textStyle="bold"
+                            android:textSize="15sp"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"/>
+                        <TextView
+                            android:layout_weight="1"
+                            android:id="@+id/mobile_tv1"
+                            android:padding="5dp"
+                            android:text="8981111568"
+                            android:textColor="@color/black"
+                            android:textStyle="normal"
+                            android:textSize="15sp"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"/>
+                        <ImageView
+                            android:id="@+id/Call1"
+                            android:layout_width="25dp"
+                            android:layout_height="25dp"
+                            android:layout_marginRight="0dp"
+                            android:background="@mipmap/phone_whatsapp"
+                            android:scaleType="fitXY" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:weightSum="2"
+                        android:layout_marginLeft="20dp"
+                        android:orientation="horizontal"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content">
+                        <TextView
+                            android:layout_weight="1"
+                            android:id="@+id/led_tv11"
+                            android:padding="5dp"
+                            android:text="W"
+                            android:textColor="#43a915"
+                            android:textStyle="bold"
+                            android:textSize="15sp"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"/>
+
+                        <TextView
+                            android:layout_weight="1"
+                            android:id="@+id/mobile_tv2"
+                            android:padding="5dp"
+                            android:text="8981111568"
+                            android:textColor="@color/black"
+                            android:textStyle="normal"
+                            android:textSize="15sp"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"/>
+                        <ImageView
+                            android:id="@+id/Call2"
+                            android:layout_weight="0"
+                            android:layout_width="30dp"
+                            android:layout_height="30dp"
+                            android:background="@mipmap/phone_whatsapp1"
+                            android:scaleType="fitXY" />
+                    </LinearLayout>
+
+                </LinearLayout>
+
+                <ImageView
+                    android:id="@+id/emails"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_below="@+id/lv_phone"
+                    android:layout_marginLeft="0dp"
+                    android:layout_marginTop="10dp"
+                    android:background="@mipmap/emails"
+                    android:scaleType="fitXY" />
+                <TextView
+                    android:id="@+id/tv_email"
+                    android:padding="5dp"
+                    android:layout_toRightOf="@+id/emails"
+                    android:layout_below="@+id/lv_phone"
+                    android:text="akashmondal1981@gmail.com"
+                    android:textSize="12sp"
+                    android:layout_marginTop="10dp"
+                    android:textColor="@color/black"
+                    android:layout_marginLeft="10dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+
+                <TextView
+                    android:id="@+id/led_tv5"
+                    android:layout_marginTop="10dp"
+                    android:textStyle="bold"
+                    android:gravity="center"
+                    android:textSize="12sp"
+                    android:textColor="@color/white"
+                    android:layout_marginLeft="0dp"
+                    android:layout_below="@+id/emails"
+                    android:padding="0dp"
+                    android:background="@drawable/zip_codes"
+                    android:layout_width="100dp"
+                    android:layout_height="35dp"
+                    android:text="D Pharma"/>
+                <TextView
+                    android:id="@+id/coolage_from"
+                    android:layout_toRightOf="@+id/led_tv5"
+                    android:layout_marginTop="10dp"
+                    android:textStyle="bold"
+                    android:gravity="center"
+                    android:textSize="12sp"
+                    android:textColor="@color/white"
+                    android:layout_marginLeft="5dp"
+                    android:layout_below="@+id/emails"
+                    android:padding="0dp"
+                    android:background="@drawable/zip_codes"
+                    android:layout_width="100dp"
+                    android:layout_height="35dp"
+                    android:text="Collage From"/>
+
+                <LinearLayout
+                    android:layout_toRightOf="@+id/coolage_from"
+                    android:layout_below="@+id/emails"
+                    android:layout_marginTop="10dp"
+                    android:layout_alignParentRight="true"
+                    android:gravity="center"
+                    android:layout_marginLeft="5dp"
+                    android:background="@drawable/edit_grays"
+                    android:layout_width="150dp"
+                    android:layout_height="35dp">
+                    <Spinner
+                        android:id="@+id/short_by_session"
+                        android:layout_gravity="center"
+                        android:textColor="@color/gray"
+                        android:layout_marginLeft="0dp"
+                        android:overlapAnchor="false"
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:layout_below="@+id/led_tv"/>
+                </LinearLayout>
+
+
+
+
+                <LinearLayout
+                    android:id="@+id/collage_Id"
+                    android:layout_marginTop="15sp"
+                    android:layout_marginRight="0dp"
+                    android:paddingLeft="10dp"
+                    android:paddingEnd="10dp"
+                    android:layout_below="@+id/led_tv5"
+                    android:layout_weight="1"
+                    android:padding="0dp"
+                    android:background="@drawable/spiner_lead"
+                    android:layout_width="match_parent"
+                    android:layout_height="45dp">
+                    <Spinner
+                        android:id="@+id/spinner_collage"
+                        android:textColor="@color/gray"
+                        android:overlapAnchor="false"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/led_tv"/>
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:id="@+id/select_Id"
+                    android:layout_marginTop="15sp"
+                    android:layout_marginRight="60dp"
+                    android:paddingLeft="10dp"
+                    android:paddingEnd="10dp"
+                    android:layout_below="@+id/collage_Id"
+                    android:layout_weight="1"
+                    android:padding="0dp"
+                    android:background="@drawable/spiner_lead"
+                    android:layout_width="match_parent"
+                    android:layout_height="45dp">
+                    <Spinner
+                        android:id="@+id/spinner"
+                        android:textColor="@color/gray"
+                        android:overlapAnchor="false"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/led_tv"/>
+                </LinearLayout>
+                <ImageView
+                    android:id="@+id/ImgCalender"
+                    android:layout_marginLeft="5dp"
+                    android:layout_below="@+id/collage_Id"
+                    android:layout_marginTop="15sp"
+                    android:layout_alignParentEnd="true"
+                    android:padding="10dp"
+                    android:layout_width="45dp"
+                    android:layout_height="45dp"
+                    android:background="@mipmap/calendars" />
+                <TextView
+                    android:id="@+id/leadText"
+                    android:text="Lead Followups Dates :"
+                    android:layout_marginTop="15sp"
+                    android:textColor="@color/black"
+                    android:layout_below="@+id/ImgCalender"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+                <TextView
+                    android:id="@+id/dateId"
+                    android:layout_marginLeft="20dp"
+                    android:layout_toRightOf="@+id/leadText"
+                    android:text="Date"
+                    android:layout_marginTop="15sp"
+                    android:layout_below="@+id/ImgCalender"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/textarea_Id"
+                    android:gravity="top"
+                    android:paddingLeft="20dp"
+                    android:paddingTop="10dp"
+                    android:layout_marginTop="15sp"
+                    android:layout_below="@+id/dateId"
+                    android:layout_width="250dp"
+                    android:layout_height="90dp"
+                    android:layout_marginLeft="0dp"
+                    android:textSize="15dp"
+                    android:background="@drawable/applys"
+                    android:inputType="textMultiLine"
+                    android:hint="Add Followup Notes, Maximum 120 Latters"
+                    />
+                <TextView
+                    android:layout_below="@+id/dateId"
+                    android:layout_toRightOf="@+id/textarea_Id"
+                    android:layout_alignParentEnd="true"
+                    android:layout_marginTop="15sp"
+                    android:id="@+id/apply"
+                    android:gravity="center"
+                    android:padding="10dp"
+                    android:paddingTop="10dp"
+                    android:textSize="12dp"
+                    android:textColor="@color/white"
+                    android:background="@drawable/number_bg"
+                    android:layout_width="match_parent"
+                    android:layout_height="90dp"
+                    android:text="Apply"/>
+
+
+                <!--                <com.google.android.material.button.MaterialButton-->
+                <!--                    android:id="@+id/send"-->
+                <!--                    android:layout_width="100dp"-->
+                <!--                    android:layout_height="55dp"-->
+                <!--                    android:layout_below="@+id/textarea_Id"-->
+                <!--                    android:layout_alignParentEnd="true"-->
+                <!--                    android:layout_centerInParent="true"-->
+                <!--                    android:layout_marginTop="10sp"-->
+                <!--                    android:text="Save"-->
+                <!--                    android:textColor="@color/white"-->
+                <!--                    android:textSize="12sp"-->
+                <!--                    app:backgroundTint="#0b1f51"-->
+                <!--                    app:cornerRadius="10dp"-->
+                <!--                    app:layout_constraintEnd_toEndOf="parent"-->
+                <!--                    app:layout_constraintStart_toStartOf="parent" />-->
+                <LinearLayout
+                    android:id="@+id/sendInfoLv"
+                    android:weightSum="3"
+                    android:orientation="horizontal"
+                    android:layout_below="@+id/textarea_Id"
+                    android:layout_marginTop="10dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <!--                    <Space-->
+                    <!--                        android:layout_width="10dp"-->
+                    <!--                        android:layout_height="0dp"/>-->
+                    <LinearLayout
+                        android:id="@+id/sendInfoLv1"
+                        android:layout_weight="1"
+                        android:orientation="vertical"
+                        android:background="@drawable/zip_codes"
+                        android:layout_width="100dp"
+                        android:layout_height="100dp">
+                        <TextView
+                            android:id="@+id/shareId"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:gravity="center"
+                            android:padding="15dp"
+                            android:text="PAYMENT SCHDULE"
+                            android:textColor="@color/white"
+                            android:textSize="8sp"
+                            android:textStyle="normal" />
+
+                        <ImageView
+                            android:layout_gravity="center"
+                            android:layout_width="20dp"
+                            android:layout_height="20dp"
+                            android:layout_below="@+id/led_tv5"
+                            android:layout_marginTop="5dp"
+                            android:background="@mipmap/send_payment"
+                            android:scaleType="fitXY" />
+                    </LinearLayout>
+                    <Space
+                        android:layout_width="10dp"
+                        android:layout_height="0dp"/>
+                    <LinearLayout
+                        android:id="@+id/seend_pay"
+                        android:layout_weight="1"
+                        android:orientation="vertical"
+                        android:background="@drawable/zip_code1"
+                        android:layout_width="100dp"
+                        android:layout_height="100dp">
+                        <TextView
+                            android:id="@+id/send_info"
+                            android:textStyle="normal"
+                            android:gravity="center"
+                            android:textSize="8sp"
+                            android:textColor="@color/white"
+                            android:padding="15dp"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="SEND PAYMENT INFO"
+                            />
+                        <ImageView
+                            android:layout_gravity="center"
+                            android:layout_width="20dp"
+                            android:layout_height="20dp"
+                            android:layout_below="@+id/led_tv5"
+                            android:layout_marginTop="5dp"
+                            android:background="@mipmap/send_pay"
+                            android:scaleType="fitXY" />
+                    </LinearLayout>
+                    <Space
+                        android:layout_width="10dp"
+                        android:layout_height="0dp"/>
+                    <LinearLayout
+                        android:id="@+id/sendInfoLv2"
+                        android:background="@drawable/zip_code2"
+                        android:layout_weight="1"
+                        android:orientation="vertical"
+                        android:layout_width="100dp"
+                        android:layout_height="100dp">
+
+                        <TextView
+                            android:id="@+id/applic"
+                            android:textStyle="normal"
+                            android:gravity="center"
+                            android:textSize="8sp"
+                            android:textColor="@color/white"
+                            android:layout_marginLeft="0dp"
+                            android:padding="15dp"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="APPLICATION FORM"
+                            />
+                        <ImageView
+                            android:layout_gravity="center"
+                            android:layout_width="20dp"
+                            android:layout_height="20dp"
+                            android:layout_below="@+id/led_tv5"
+                            android:layout_marginTop="5dp"
+                            android:background="@mipmap/send_app"
+                            android:scaleType="fitXY" />
+                    </LinearLayout>
+
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_marginTop="10dp"
+                    android:layout_weight="1"
+                    android:padding="0dp"
+                    android:id="@+id/llv"
+                    android:layout_below="@+id/sendInfoLv"
+                    android:background="@drawable/lead_stage_border"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                    <Spinner
+                        android:textColor="@color/gray"
+                        android:overlapAnchor="false"
+                        android:id="@+id/spinner1"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/led_tv"/>
+                </LinearLayout>
+                <LinearLayout
+                    android:id="@+id/sendInfoLv22"
+                    android:layout_marginBottom="15dp"
+                    android:orientation="horizontal"
+                    android:layout_below="@+id/llv"
+                    android:layout_marginTop="25dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                    <TextView
+                        android:layout_weight="1"
+                        android:layout_marginTop="5dp"
+                        android:id="@+id/led_name11"
+                        android:text="Set Lead Priority"
+                        android:textStyle="normal"
+                        android:textSize="15dp"
+                        android:textColor="#0b1f51"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"/>
+                    <RatingBar
+                        android:id="@+id/ratingBar"
+                        style="?android:attr/ratingBarStyleIndicator"
+                        android:layout_width="100dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="0dp"
+                        android:layout_weight="1"
+                        android:isIndicator="false"
+                        android:numStars="5"
+                        android:stepSize="0.1"
+                        app:layout_constraintLeft_toLeftOf="parent"
+                        app:layout_constraintRight_toRightOf="parent"
+                        app:layout_constraintTop_toTopOf="parent"
+                        tools:layout_constraintLeft_creator="1"
+                        tools:layout_constraintRight_creator="1"
+                        tools:layout_constraintTop_creator="1" />
+                </LinearLayout>
+                <com.google.android.material.button.MaterialButton
+                    android:id="@+id/save"
+                    android:layout_gravity="left"
+                    android:layout_marginBottom="20dp"
+                    android:layout_centerHorizontal="true"
+                    android:layout_width="150dp"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginLeft="5dp"
+                    android:layout_height="60dp"
+                    android:layout_below="@+id/sendInfoLv22"
+                    android:text="Save"
+                    android:textColor="@color/white"
+                    android:textSize="12sp"
+                    app:backgroundTint="#0b1f51"
+                    app:cornerRadius="10dp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent" />
+            </RelativeLayout>
+        </ScrollView>
+        <com.github.clans.fab.FloatingActionMenu
+            android:id="@+id/material_design_android_floating_action_menu"
+            fab:menu_labels_style="@style/MenuLabelsStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginBottom="11dp"
+            android:layout_marginLeft="11dp"
+            android:layout_marginRight="11dp"
+            fab:menu_animationDelayPerItem="55"
+            fab:menu_backgroundColor="@android:color/transparent"
+            fab:menu_buttonSpacing="0dp"
+            fab:menu_colorNormal="#da3c2f"
+            fab:menu_colorPressed="#dc4b3f"
+            fab:menu_colorRipple="#99d4d4d4"
+            fab:menu_fab_label=""
+            fab:menu_fab_size="mini"
+            fab:menu_icon="@drawable/fab_add"
+            fab:menu_labels_colorNormal="#333"
+            fab:menu_labels_colorPressed="#444"
+            fab:menu_labels_colorRipple="#66efecec"
+            fab:menu_labels_cornerRadius="3dp"
+            fab:menu_labels_ellipsize="none"
+            fab:menu_labels_hideAnimation="@anim/fab_slide_out_to_right"
+            fab:menu_labels_margin="0dp"
+            fab:menu_labels_maxLines="-1"
+            fab:menu_labels_padding="8dp"
+            fab:menu_labels_position="left"
+            fab:menu_labels_showAnimation="@anim/fab_slide_in_from_right"
+            fab:menu_labels_showShadow="true"
+            fab:menu_labels_singleLine="false"
+            fab:menu_labels_textColor="#f2f1f1"
+            fab:menu_labels_textSize="15sp"
+            fab:menu_openDirection="up"
+            fab:menu_shadowColor="#66aff198"
+            fab:menu_shadowRadius="4dp"
+            fab:menu_shadowXOffset="1dp"
+            fab:menu_shadowYOffset="4dp"
+            fab:menu_showShadow="true">
+
+            <com.github.clans.fab.FloatingActionButton
+                android:id="@+id/edit_lead"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@mipmap/edit_float_btn"
+                fab:fab_label="Edit Lead"
+                fab:fab_size="mini" />
+
+            <com.github.clans.fab.FloatingActionButton
+                android:id="@+id/send_flyer"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@mipmap/send"
+                fab:fab_label="Send Flyer"
+                fab:fab_size="mini" />
+
+            <com.github.clans.fab.FloatingActionButton
+                android:id="@+id/send"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@mipmap/send"
+                fab:fab_label="Request to collage addmission"
+                fab:fab_size="mini" />
+            <com.github.clans.fab.FloatingActionButton
+                android:id="@+id/addToList"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@mipmap/add"
+                fab:fab_label="Request to Green List"
+                fab:fab_size="mini" />
+            <com.github.clans.fab.FloatingActionButton
+                android:id="@+id/removegreen"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                fab:fab_label="Remove Green List"
+                android:src="@drawable/ic_baseline_delete_24"
+                fab:fab_size="mini" />
+            <com.github.clans.fab.FloatingActionButton
+                android:id="@+id/addToYelowList"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@mipmap/yellowlist"
+                fab:fab_label="Request to Yellow List"
+                fab:fab_size="mini" />
+            <com.github.clans.fab.FloatingActionButton
+                android:id="@+id/removeyellow"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ic_baseline_delete_24"
+                fab:fab_label="Remove Yellow List"
+                fab:fab_size="mini" />
+            <com.github.clans.fab.FloatingActionButton
+                android:id="@+id/addToProList"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@mipmap/addadmission"
+                fab:fab_label="Request to Admission Projection"
+                fab:fab_size="mini" />
+        </com.github.clans.fab.FloatingActionMenu>
+
+    </RelativeLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

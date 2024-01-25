@@ -1,0 +1,267 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@mipmap/leads_bg"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:layout_editor_absoluteX="0dp"
+        tools:layout_editor_absoluteY="-127dp">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <LinearLayout
+                android:id="@+id/lv"
+                android:layout_marginTop="30dp"
+                android:gravity="center"
+                android:layout_marginLeft="30dp"
+                android:layout_marginRight="30dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <ImageView
+                    android:layout_width="150dp"
+                    android:layout_height="40dp"
+                    android:background="@mipmap/logo_noname" />
+            </LinearLayout>
+            <com.makeramen.roundedimageview.RoundedImageView
+                android:id="@+id/round_image"
+                android:layout_below="@+id/lv"
+                android:layout_marginTop="25dp"
+                android:layout_marginLeft="30dp"
+                android:layout_marginRight="30dp"
+                android:layout_width="match_parent"
+                android:layout_height="180dp"
+                app:riv_corner_radius="20dip"
+                android:elevation="5dp"
+                android:scaleType="fitXY"
+                android:background="@mipmap/edit_lead" />
+            <TextView
+                android:id="@+id/led_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/round_image"
+                android:layout_marginTop="20sp"
+                android:layout_marginLeft="30dp"
+                android:layout_marginRight="30dp"
+                android:text="Edit Lead"
+                android:textColor="#0b1f52"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/names"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_below="@+id/led_tv"
+                android:layout_marginLeft="30dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginRight="30dp"
+                android:background="@drawable/edit_textbg"
+                android:inputType="text"
+                android:hint="Enter Name"
+                android:paddingLeft="10dp"
+                android:paddingEnd="10dp" />
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/middle_name"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_below="@+id/names"
+                android:layout_marginLeft="30dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginRight="30dp"
+                android:background="@drawable/edit_textbg"
+                android:inputType="text"
+                android:hint="Enter Middle Name"
+                android:paddingLeft="10dp"
+                android:paddingEnd="10dp" />
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/last_name"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_below="@+id/middle_name"
+                android:layout_marginLeft="30dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginRight="30dp"
+                android:background="@drawable/edit_textbg"
+                android:inputType="text"
+                android:hint="Enter Last Name"
+                android:paddingLeft="10dp"
+                android:paddingEnd="10dp" />
+            <LinearLayout
+                android:id="@+id/lv2"
+                android:weightSum="2"
+                android:orientation="horizontal"
+                android:layout_below="@+id/last_name"
+                android:layout_marginTop="15dp"
+                android:layout_marginLeft="30dp"
+                android:layout_marginRight="30dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/pnone1"
+                    android:layout_weight="1"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:background="@drawable/edit_textbg"
+                    android:layout_below="@+id/led_tv"
+                    android:layout_marginRight="5dp"
+                    android:inputType="text"
+                    android:hint="Phone Number"
+                    android:maxLength="10"
+                    android:paddingLeft="10dp"
+                    android:paddingEnd="10dp" />
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/pnone2"
+                    android:layout_weight="1"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:background="@drawable/edit_textbg"
+                    android:layout_below="@+id/led_tv"
+                    android:layout_marginLeft="5dp"
+                    android:hint="Whatsapp Number"
+                    android:inputType="text"
+                    android:maxLength="10"
+                    android:paddingLeft="10dp"
+                    android:paddingEnd="10dp" />
+            </LinearLayout>
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/emails"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_below="@+id/lv2"
+                android:layout_marginLeft="30dp"
+                android:layout_marginTop="15dp"
+                android:layout_marginRight="30dp"
+                android:background="@drawable/edit_textbg"
+                android:hint="Enter Email"
+                android:inputType="text"
+                android:paddingLeft="10dp"
+                android:paddingEnd="10dp" />
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/student_phone"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_below="@+id/emails"
+                android:layout_marginLeft="30dp"
+                android:layout_marginTop="15dp"
+                android:layout_marginRight="30dp"
+                android:background="@drawable/edit_textbg"
+                android:hint="Enter Student Phone Number"
+                android:inputType="text"
+                android:paddingLeft="10dp"
+                android:paddingEnd="10dp" />
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/alternative_phone"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_below="@+id/student_phone"
+                android:layout_marginLeft="30dp"
+                android:layout_marginTop="15dp"
+                android:layout_marginRight="30dp"
+                android:background="@drawable/edit_textbg"
+                android:hint="Enter Alternative Phone Number"
+                android:inputType="text"
+                android:paddingLeft="10dp"
+                android:paddingEnd="10dp" />
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/resonText"
+                android:gravity="top"
+                android:layout_marginLeft="30dp"
+                android:layout_marginTop="15dp"
+                android:layout_marginRight="30dp"
+                android:layout_below="@+id/alternative_phone"
+                android:layout_width="match_parent"
+                android:layout_height="90dp"
+                android:textSize="15dp"
+                android:paddingTop="5dp"
+                android:paddingLeft="5dp"
+                android:background="@drawable/edit_textbg1"
+                android:inputType="textMultiLine"
+                android:hint="Reason For edit Lead"
+                />
+
+            <LinearLayout
+                android:id="@+id/lvSource"
+                android:layout_below="@+id/resonText"
+                android:background="@drawable/edit_textbg"
+                android:layout_marginTop="15dp"
+                android:layout_marginLeft="30dp"
+                android:layout_marginRight="30dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <Spinner
+                    android:textColor="@color/gray"
+                    android:layout_marginLeft="8dp"
+                    android:overlapAnchor="false"
+                    android:id="@+id/source"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                   />
+            </LinearLayout>
+            <LinearLayout
+                android:id="@+id/lv3"
+                android:weightSum="2"
+                android:orientation="horizontal"
+                android:layout_below="@+id/lvSource"
+                android:layout_marginTop="15dp"
+                android:layout_marginLeft="30dp"
+                android:layout_marginRight="30dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <LinearLayout
+                    android:background="@drawable/edit_textbg"
+                    android:layout_weight="0"
+                    android:layout_marginTop="7dp"
+                    android:layout_marginRight="5dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                    <Spinner
+                        android:textColor="@color/gray"
+                        android:layout_marginLeft="8dp"
+                        android:overlapAnchor="false"
+                        android:id="@+id/course"
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:layout_below="@+id/led_tv"/>
+                </LinearLayout>
+
+<!--                <com.google.android.material.button.MaterialButton-->
+<!--                    android:id="@+id/send"-->
+<!--                    android:layout_width="40dp"-->
+<!--                    android:layout_height="60dp"-->
+<!--                    android:layout_below="@+id/textarea_Id"-->
+<!--                    android:layout_marginLeft="5dp"-->
+<!--                    android:layout_weight="1"-->
+<!--                    android:text="Save"-->
+<!--                    android:textColor="@color/white"-->
+<!--                    android:textSize="12sp"-->
+<!--                    app:backgroundTint="#0b1f51"-->
+<!--                    app:cornerRadius="10dp"-->
+<!--                    app:layout_constraintEnd_toEndOf="parent"-->
+<!--                    app:layout_constraintStart_toStartOf="parent" />-->
+            </LinearLayout>
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/send"
+                android:gravity="center"
+                android:layout_centerHorizontal="true"
+                android:layout_width="150dp"
+                android:layout_marginTop="35dp"
+                android:layout_marginLeft="5dp"
+                android:layout_height="60dp"
+                android:layout_below="@+id/lv3"
+                android:text="Save"
+                android:textColor="@color/white"
+                android:textSize="12sp"
+                app:backgroundTint="#0b1f51"
+                app:cornerRadius="10dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent" />
+        </RelativeLayout>
+    </ScrollView>
+</RelativeLayout>

@@ -1,0 +1,165 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/rv"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <FrameLayout
+        android:id="@+id/frM"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:id="@+id/Img_Id"
+            android:layout_width="30dp"
+            android:layout_height="55dp"
+            android:layout_below="@+id/viewLine"
+            android:background="@mipmap/tag1"
+            android:scaleType="fitXY" />
+    </FrameLayout>
+
+
+    <View
+        android:id="@+id/viewLine"
+        android:layout_width="match_parent"
+        android:layout_marginLeft="30dp"
+        android:layout_height="1dp"
+        android:layout_marginTop="4sp"
+        android:background="@color/grays" />
+
+
+    <TextView
+        android:id="@+id/led_tv"
+        android:layout_below="@+id/viewLine"
+        android:layout_toRightOf="@+id/frM"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10sp"
+        android:layout_marginLeft="20dp"
+        android:text="Akash Mondal"
+        android:textColor="@color/black"
+        android:textSize="18sp"
+        android:textStyle="normal" />
+    <ImageView
+        android:id="@+id/color_image"
+        android:visibility="gone"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="15sp"
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        android:layout_toRightOf="@+id/led_tv"
+        android:layout_below="@+id/viewLine"
+        android:scaleType="fitXY" />
+    <TextView
+        android:id="@+id/date_tv1"
+        android:layout_below="@+id/led_tv"
+        android:layout_toRightOf="@+id/frM"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="1sp"
+        android:layout_marginLeft="20dp"
+        android:text="20-12-2022 110;20 Am"
+        android:textColor="@color/black"
+        android:textSize="10sp"
+        android:textStyle="normal" />
+     <TextView
+         android:id="@+id/led_tv1"
+         android:layout_below="@+id/date_tv1"
+         android:layout_toRightOf="@+id/frM"
+         android:layout_marginLeft="20dp"
+         android:text="M"
+         android:textColor="#1359ca"
+         android:textStyle="bold"
+         android:textSize="12sp"
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content"/>
+    <TextView
+        android:id="@+id/led_tv2"
+        android:layout_below="@+id/date_tv1"
+        android:layout_toRightOf="@+id/led_tv1"
+        android:layout_marginLeft="8dp"
+        android:text="9585886392"
+        android:textColor="@color/black"
+        android:textStyle="bold"
+        android:textSize="12sp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+    <View
+        android:id="@+id/view"
+        android:layout_marginTop="2dp"
+        android:layout_toRightOf="@+id/led_tv2"
+        android:layout_below="@+id/date_tv1"
+        android:layout_marginLeft="8dp"
+        android:layout_width="1dp"
+        android:layout_height="18dp"
+        android:background="@color/black"
+        />
+
+    <TextView
+        android:id="@+id/led_tv3"
+        android:layout_below="@+id/date_tv1"
+        android:layout_toRightOf="@+id/view"
+        android:layout_marginLeft="8dp"
+        android:text="w"
+        android:textColor="#43a915"
+        android:textStyle="bold"
+        android:textSize="12sp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+    <TextView
+        android:id="@+id/led_tv4"
+        android:layout_below="@+id/date_tv1"
+        android:layout_toRightOf="@+id/led_tv3"
+        android:layout_marginLeft="8dp"
+        android:text="9585886392"
+        android:textColor="@color/black"
+        android:textStyle="bold"
+        android:textSize="12sp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+    <TextView
+        android:id="@+id/led_tv5"
+        android:layout_marginBottom="5dp"
+        android:layout_marginTop="6dp"
+        android:gravity="center"
+        android:textSize="12sp"
+        android:layout_marginLeft="20dp"
+        android:layout_below="@+id/led_tv1"
+        android:layout_toRightOf="@+id/frM"
+        android:paddingTop="5dp"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:paddingBottom="5dp"
+        android:background="@drawable/course_border"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="D Pharma"/>
+
+    <TextView
+        android:id="@+id/councilername"
+        android:layout_marginBottom="5dp"
+        android:layout_marginTop="6dp"
+        android:gravity="center"
+        android:textSize="12sp"
+        android:layout_marginLeft="5dp"
+        android:layout_below="@+id/led_tv1"
+        android:layout_toRightOf="@+id/led_tv5"
+        android:paddingTop="5dp"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:paddingBottom="5dp"
+        android:background="@drawable/course_border"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="D Pharma"/>
+
+    <ImageView
+        android:id="@+id/Img_Id1"
+        android:layout_marginTop="50dp"
+        android:layout_width="25dp"
+        android:layout_height="25dp"
+        android:layout_marginRight="10dp"
+        android:layout_alignParentEnd="true"
+        android:background="@mipmap/arrow" />
+</RelativeLayout>

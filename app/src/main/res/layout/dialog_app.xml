@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center">
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="330dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_margin="8dp"
+        android:elevation="5dp"
+        app:cardBackgroundColor="@color/white"
+        app:cardCornerRadius="10dp">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:padding="16dp">
+
+            <com.google.android.material.textview.MaterialTextView
+                android:id="@+id/appDialogTitleTv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:fontFamily="@font/medium"
+                android:textColor="@color/text_color4"
+                android:textSize="15dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+
+            <androidx.appcompat.widget.AppCompatImageView
+                android:id="@+id/appDialogImg"
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:adjustViewBounds="true"
+                android:visibility="gone"
+                app:srcCompat="@drawable/ic_launcher_background"
+                app:layout_constraintDimensionRatio="1:1"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/appDialogTitleTv" />
+
+            <com.google.android.material.textview.MaterialTextView
+                android:id="@+id/appDialogdescTV"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginStart="5dp"
+                android:layout_marginTop="16dp"
+                android:fontFamily="@font/regular"
+                android:textSize="14dp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/appDialogImg" />
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/appDialogRightCancelBtn"
+                style="@style/Widget.MaterialComponents.Button.TextButton"
+                android:layout_width="0dp"
+                android:layout_height="58dp"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="16dp"
+                android:fontFamily="@font/medium"
+                android:minWidth="170dp"
+                android:text="cancel"
+                android:textAllCaps="false"
+                android:textColor="@color/text_color3"
+                android:textSize="15dp"
+                app:backgroundTint="@android:color/transparent"
+                app:cornerRadius="20dp"
+                app:elevation="0dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@+id/appDialogOkBtn"
+                app:layout_constraintTop_toBottomOf="@+id/appDialogdescTV"
+                app:rippleColor="@color/rippleColor"
+                tools:ignore="SpUsage" />
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/appDialogOkBtn"
+                android:layout_width="0dp"
+                android:layout_height="58dp"
+                android:layout_marginTop="16dp"
+                android:layout_marginEnd="8dp"
+                android:fontFamily="@font/medium"
+                android:minWidth="170dp"
+                android:text="yes"
+                android:textAllCaps="false"
+                android:textColor="@color/white"
+                android:textSize="15dp"
+                app:backgroundTint="@color/accent"
+                app:cornerRadius="20dp"
+                app:elevation="0dp"
+                app:layout_constraintEnd_toStartOf="@+id/appDialogRightCancelBtn"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/appDialogdescTV"
+                app:rippleColor="@color/rippleColor"
+                tools:ignore="SpUsage" />
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/appDialogDeleteBtn"
+                android:layout_width="0dp"
+                android:layout_height="58dp"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="16dp"
+                android:fontFamily="@font/medium"
+                android:minWidth="170dp"
+                android:text="Delete"
+                android:textAllCaps="false"
+                android:textColor="@color/white"
+                android:textSize="15dp"
+                android:visibility="gone"
+                app:backgroundTint="@color/red"
+                app:cornerRadius="20dp"
+                app:elevation="0dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@+id/appDialogLeftCancelBtn"
+                app:layout_constraintTop_toBottomOf="@+id/appDialogdescTV"
+                app:rippleColor="@color/rippleColor"
+                tools:ignore="SpUsage" />
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/appDialogLeftCancelBtn"
+                style="@style/Widget.MaterialComponents.Button.TextButton"
+                android:layout_width="0dp"
+                android:layout_height="58dp"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="16dp"
+                android:fontFamily="@font/medium"
+                android:minWidth="170dp"
+                android:text="cancel"
+                android:textAllCaps="false"
+                android:textColor="@color/text_color3"
+                android:textSize="15dp"
+                android:visibility="gone"
+                app:backgroundTint="@android:color/transparent"
+                app:cornerRadius="20dp"
+                app:elevation="0dp"
+                app:layout_constraintEnd_toStartOf="@+id/appDialogDeleteBtn"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/appDialogdescTV"
+                app:rippleColor="@color/rippleColor"
+                tools:ignore="SpUsage" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </androidx.cardview.widget.CardView>
+
+</FrameLayout>

@@ -1,0 +1,211 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <LinearLayout
+        android:id="@+id/lv"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <RadioGroup
+                android:orientation="horizontal"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/radioGroup1">
+                <RadioButton
+                    android:id="@+id/cashId1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Cash"
+                    android:checked="false"
+                    android:textSize="14dp" />
+
+                <RadioButton
+                    android:id="@+id/Chequeid1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Cheque/DD"
+                    android:textSize="14dp"
+                    android:checked="false"
+                    />
+                <RadioButton
+                    android:id="@+id/OnlineId1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="UPI/NEFT/ Online/ RTGS"
+                    android:textSize="14dp"
+                    android:checked="false"
+                    />
+            </RadioGroup>
+
+        </RelativeLayout>
+        <LinearLayout
+            android:orientation="horizontal"
+            android:padding="0dip"
+            android:weightSum="4"
+            android:id="@+id/tableRow2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="2dip">
+
+
+
+            <TextView
+                android:id="@+id/amountId1"
+                android:layout_weight="0.8"
+                android:layout_marginLeft="3dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:inputType="number"
+                android:padding="10dp"
+                android:hint="Amount"
+                android:textColor="@color/black"
+                android:textSize="8sp"
+                android:background="#f6f6f6"/>
+            <TextView
+                android:id="@+id/dateId1"
+                android:layout_weight="0.8"
+                android:layout_marginLeft="2dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:padding="10dp"
+                android:hint="25-12-2022"
+                android:textColor="@color/black"
+                android:textSize="8sp"
+                android:background="#f6f6f6"/>
+            <TextView
+                android:id="@+id/trangactionId1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.8"
+                android:background="#f6f6f6"
+                android:gravity="center"
+                android:padding="10dp"
+                android:hint="Traction Id"
+                android:textColor="@color/black"
+                android:textSize="8sp" />
+            <LinearLayout
+                android:layout_weight="1.9"
+                android:background="@drawable/edit_grays"
+                android:layout_marginLeft="5dp"
+                android:layout_width="44dp"
+                android:layout_height="32dp">
+
+                <Spinner
+                    android:id="@+id/bank_list"
+                    android:layout_gravity="center"
+                    android:textColor="@color/gray"
+                    android:layout_marginLeft="0dp"
+                    android:overlapAnchor="false"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:layout_below="@+id/led_tv"/>
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_below="@+id/lv"
+        android:orientation="horizontal"
+        android:padding="0dip"
+        android:weightSum="4"
+        android:id="@+id/ltableRow4"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dip">
+        <TextView
+            android:id="@+id/accHolderName1"
+            android:layout_weight="1"
+            android:layout_marginLeft="3dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:padding="10dp"
+            android:hint="Acc Holder Name"
+            android:textColor="@color/black"
+            android:textSize="8sp"
+            android:background="#f6f6f6"/>
+        <TextView
+            android:id="@+id/checkDDNo1"
+            android:layout_weight="1"
+            android:layout_marginLeft="2dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:padding="10dp"
+            android:hint="Cheque/DD No."
+            android:textColor="@color/black"
+            android:textSize="8sp"
+            android:background="#f6f6f6"/>
+        <TextView
+            android:id="@+id/SenderBankName1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="#f6f6f6"
+            android:gravity="center"
+            android:padding="10dp"
+            android:hint="Bank Name"
+            android:textColor="@color/black"
+            android:textSize="8sp" />
+
+    </LinearLayout>
+    <LinearLayout
+        android:orientation="horizontal"
+        android:padding="0dip"
+        android:weightSum="2"
+        android:id="@+id/tableRows44"
+        android:layout_below="@+id/ltableRow4"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dip">
+        <TextView
+            android:id="@+id/branch1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="#f6f6f6"
+            android:gravity="center"
+            android:padding="10dp"
+            android:hint="Branch"
+            android:textColor="@color/black"
+            android:textSize="8sp" />
+        <TextView
+            android:id="@+id/checkDate1"
+            android:layout_marginLeft="5dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="#f6f6f6"
+            android:gravity="center"
+            android:padding="10dp"
+            android:hint="Enter Date"
+            android:textColor="@color/black"
+            android:textSize="8sp" />
+    </LinearLayout>
+    <ImageView
+        android:id="@+id/show_row"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/tableRows44"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="10dp"
+        android:padding="10dp" />
+    <ImageView
+        android:id="@+id/delete_row"
+        android:layout_alignParentEnd="true"
+        android:layout_below="@+id/tableRows44"
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/ic_baseline_delete_24"
+        android:padding="10dp" />
+</RelativeLayout>
